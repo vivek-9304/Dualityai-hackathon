@@ -10,10 +10,10 @@ import matplotlib.pyplot as plt
 import cv2
 
 # Configuration
-TEST_COLOR_PATH = r"C:\Users\vivek\Desktop\Offroad_Segmentation_testImages\Offroad_Segmentation_testImages\Color_Images"
-TEST_SEG_PATH = r"C:\Users\vivek\Desktop\Offroad_Segmentation_testImages\Offroad_Segmentation_testImages\Segmentation"
+TEST_COLOR_PATH = r"D:\Desktop\Offroad_Segmentation_testImages\Offroad_Segmentation_testImages\Color_Images"
+TEST_SEG_PATH = r"D:\Desktop\Offroad_Segmentation_testImages\Offroad_Segmentation_testImages\Segmentation"
 MODEL_PATH = "runs/best_model.pth"
-BATCH_SIZE = 4
+BATCH_SIZE = 10
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Class mapping (same as training)
